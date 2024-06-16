@@ -1,0 +1,20 @@
+{
+    "menu":[
+        {"id":1 , "name": "filimo", "link":"http://filimo.com"},
+        {"id":2 , "name": "filimotour", "link":"http://filimo.com"},
+        {"id":3 , "name": "film", "link":"http://filimo.com"},
+        {"id":4 , "name": "serial", "link":"http://filimo.com"},
+        {"id":5 , "name": "group", "link":"http://filimo.com"},
+        {"id":6 , "name": "kids", "link":"http://filimo.com"}
+    ],
+
+    "slider-desktop":[
+        
+        {"id":1, "image":"https://static.cdn.asset.filimo.com/ct/pbs4e_desktop_1_v2.jpeg?width=1920&quality=85&secret=bUgCBBI36GhB4UVdIW88Zg?6","alt":"slide-1"},
+        {"id":2, "image":"https://static.cdn.asset.filimo.com/ct/pbs4e_desktop_1_v2.jpeg?width=1920&quality=85&secret=bUgCBBI36GhB4UVdIW88Zg?6", "alt":"slide-2"},
+        {"id":3, "image":"https://static.cdn.asset.filimo.com/ct/pbs4e_desktop_1_v2.jpeg?width=1920&quality=85&secret=bUgCBBI36GhB4UVdIW88Zg?6", "alt":"slide-3"},
+        {"id":4, "image":"https://static.cdn.asset.filimo.com/ct/pbs4e_desktop_1_v2.jpeg?width=1920&quality=85&secret=bUgCBBI36GhB4UVdIW88Zg?6", "alt":"slide-4"},
+        {"id":5, "image":"https://static.cdn.asset.filimo.com/ct/pbs4e_desktop_1_v2.jpeg?width=1920&quality=85&secret=bUgCBBI36GhB4UVdIW88Zg?6", "alt":"slide-5"},
+        {"id":6, "image":"https://static.cdn.asset.filimo.com/ct/pbs4e_desktop_1_v2.jpeg?width=1920&quality=85&secret=bUgCBBI36GhB4UVdIW88Zg?6", "alt":"slide-6"}
+    ]
+}

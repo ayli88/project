@@ -1,0 +1,25 @@
+@font-face {
+    font-family: persian;
+    src: url(../../fonts/IRANYekanWebFn.eot);
+    src: url(../../fonts/IRANYekanWebFn.ttf);
+    src: url(../../fonts/IRANYekanWebFn.woff);
+    src: url(../../fonts/IRANYekanWebFn.woff2);
+  }
+ 
+  @import 'animate.css';
+
+
+*{
+    margin: 0;
+    padding: 0;
+   font-family: persian;
+   
+   
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
