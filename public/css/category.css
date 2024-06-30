@@ -1,0 +1,309 @@
+@media only screen and (min-width: 768px) {
+  .catagory {
+    width: 96%;
+    height: 90vh;
+    margin: 20px auto;
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      margin-bottom: 10px;
+      h1 {
+        color: white;
+        font-weight: bold;
+      }
+
+      span {
+        color: orange;
+        font-weight: 300;
+      }
+    }
+
+    .movies {
+      display: grid;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 5px;
+
+      .picture {
+        object-fit: cover;
+        overflow: hidden;
+        &:nth-child(12),
+        &:nth-child(11),
+        &:nth-child(10),
+        &:nth-child(15),
+        &:nth-child(14),
+        &:nth-child(13) {
+          display: none;
+        }
+
+        img {
+          width: inherit;
+          height: inherit;
+          object-fit: cover;
+          border-radius: 5px;
+          position: relative;
+        }
+        .overlay {
+          width: 100%;
+          border-radius: 5px;
+
+          height: 100%;
+          z-index: 2;
+          background-color: #242424bb;
+          /* opacity: 0.6; */
+          height: 100%;
+          transform: translateY(-100%);
+          position: absolute;
+          transition: 900ms;
+
+          h5,
+          p {
+            text-align: right;
+            width: 70%;
+            margin-left: auto;
+            font-size: 14px;
+            text-wrap: wrap;
+            margin-top: 40%;
+            color: white;
+          }
+
+          /* top: 100%; */
+        }
+      }
+    }
+  }
+  .picture:hover .overlay {
+    top: 100%;
+    /* transform: translateY(0%); */
+    cursor: pointer;
+    transition: 900ms;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .catagory {
+    width: 96%;
+    height: 90vh;
+    margin: 20px auto;
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      margin-bottom: 10px;
+      h1 {
+        color: white;
+        font-weight: bold;
+      }
+
+      span {
+        color: orange;
+        font-weight: 300;
+      }
+    }
+
+    .movies {
+      display: grid;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 5px;
+
+      .picture {
+        object-fit: cover;
+        overflow: hidden;
+        &:nth-child(15),
+        &:nth-child(14),
+        &:nth-child(13) {
+          display: none;
+        }
+
+        &:nth-child(12),
+        &:nth-child(11),
+        &:nth-child(10)
+        {
+          display: inline-block;
+        }
+
+        img {
+          width: inherit;
+          height: inherit;
+          object-fit: cover;
+          border-radius: 5px;
+          position: relative;
+        }
+        .overlay {
+          width: 100%;
+          border-radius: 5px;
+
+          height: 100%;
+          z-index: 2;
+          background-color: #242424bb;
+          /* opacity: 0.6; */
+          height: 100%;
+          transform: translateY(-100%);
+          position: absolute;
+          transition: 900ms;
+
+          h5,
+          p {
+            text-align: right;
+            width: 70%;
+            margin-left: auto;
+            font-size: 14px;
+            text-wrap: wrap;
+            margin-top: 40%;
+            color: white;
+          }
+
+          /* top: 100%; */
+        }
+      }
+    }
+  }
+  .picture:hover .overlay {
+    top: 100%;
+    /* transform: translateY(0%); */
+    cursor: pointer;
+    transition: 900ms;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .catagory {
+    width: 96%;
+    height: 90vh;
+    margin: 20px auto;
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      margin-bottom: 10px;
+      h1 {
+        color: white;
+        font-weight: bold;
+      }
+
+      span {
+        color: orange;
+        font-weight: 300;
+      }
+    }
+
+    .movies {
+      display: grid;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      /* gap: 10px; */
+
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 5px;
+
+      .picture {
+        /* width: 0%;
+        height: 30%; */
+        object-fit: cover;
+        overflow: hidden;
+        position: relative;
+        &:nth-child(12),
+        &:nth-child(11),
+        &:nth-child(10),
+        &:nth-child(15),
+        &:nth-child(14),
+        &:nth-child(13) {
+          display: inline-block;
+        }
+
+        img {
+          width: inherit;
+          height: inherit;
+          object-fit: cover;
+          border-radius: 5px;
+          z-index: 1;
+        }
+
+        .overlay {
+          width: 100%;
+          border-radius: 5px;
+          padding: 10px;
+          height: 100%;
+          z-index: 2;
+          background-color: #242424bb;
+          /* opacity: 0.6; */
+          transform: translateY(-100%);
+          position: absolute;
+          transition: 900ms;
+
+          h5,
+          p {
+            text-align: right;
+            /* width: 100%; */
+            height: 10px;
+            transform: translateY(-10px);
+            /* height: fit-content; */
+            margin-left: auto;
+            font-size: 14px;
+            /* line-height: 2px; */
+            /* text-wrap: wrap; */
+            margin-top: 40%;
+            color: white;
+          }
+          p{
+            margin-top: 10px;
+          }
+
+          /* top: 100%; */
+        }
+      }
+    }
+  }
+
+  .picture:hover .overlay {
+    top: 100%;
+    transform: translateY(0%);
+    cursor: pointer;
+    transition: 900ms;
+    z-index: 10   ;
+  }
+
+  .picture::before{
+    content: 'رایگان ایرانسلی';
+    
+    width: 92px;
+    height: 10%;
+    background-color: red;
+    border-radius: 24px;
+    display: inline-block;
+    position: absolute;
+    z-index: 5;
+    margin-left: auto;
+    top: 8px;
+    
+    color: white;
+    background-color: #1cb561;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    left: 8px;
+  }
+}

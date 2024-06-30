@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/main.css" />
     <link rel="stylesheet" href="./public/css/menu.css" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./public/css/setting.css" />
     <link rel="stylesheet" href="./public/css/swiper.css" />
+    <link rel="stylesheet" href="./public/css/category.css" />
+    <link rel="stylesheet" href="./public/css/recently.css" />
+    <link rel="stylesheet" href="./public/css/cool.css" />
     <title>filimo</title>
   </head>
   <body>
@@ -19,20 +18,22 @@
       <!-- nav -->
       <nav
         id="myTopnav"
-        class="topnav w-[100%] !bg-[#241a1c]/95 lg:h-12 h-12 pr-7 rtl flex-nowrap flex-auto flex-row-reverse gap-8 font-[persian] text-[12px] font-normal text-white overflow-hidden"
+        class="topnav w-[100%] !bg-[#241a1c]/95 lg:h-12 h-12 pr-7 rtl flex-nowrap flex-auto flex-row-reverse gap-8 font-[persian] text-[12px] font-normal text-white"
       >
-        <div class="filimo active lg:w-[7%] md:w-[9%] ">
-          <a href="./index.html" class="w-[100%] h-[100%]   inline-block"> </a>
+        <div class="filimo active lg:w-[7%] md:w-[9%]">
+          <a href="./index.html" class="w-[100%] h-[100%] inline-block"> </a>
         </div>
         <span
-          class="h-5 lg:translate-y-4 translate-y-5 border-l-1 border-white/40 border-[0.01px] inline-block lg:mr-[110px] md:mr-30 mr-10 md:translate-y-3  "
+          class="h-5 lg:translate-y-4 translate-y-5 border-l-1 border-white/40 border-[0.01px] inline-block lg:mr-[110px] md:mr-30 mr-10 md:translate-y-3"
         ></span>
         <div
-          class="menue flex flex-row-reverse lg:gap-8 md:gap-3 w-[90%] h-[inherit] lg:p-[14px] md:p-4 -mr-5 gap-2 p-4 "
+          class="menue flex flex-row-reverse lg:gap-8 md:gap-3 w-[90%] h-[69%] mt-4 -mr-5 gap-2"
         >
-          <div class="filimotour flex flex-row-reverse lg:gap-3 gap-1  text-white  ">
+          <div
+            class="filimotour flex flex-row-reverse lg:gap-3 gap-1 text-white"
+          >
             <svg
-              class="align-text-bottom inline-block lg:-translate-y-1 md:w-4 translate-y-0  "
+              class="align-text-bottom inline-block lg:-translate-y-1 md:w-4 translate-y-0"
               xmlns="http://www.w3.org/2000/svg"
               shape-rendering="geometricPrecision"
               text-rendering="geometricPrecision"
@@ -94,7 +95,7 @@
               ></span>
             </a>
             <div
-              class=" dropdown dropdown-content  shadow  rounded-box w-52 absolute rtl top-[170%] right-[0] md:w-80 !bg-[#241a1c] z-10 grid gap-x-2 p-[14px] box-border justify-items-end  justify-end grid-cols-2 grid-y-5 "
+              class="dropdown dropdown-content shadow rounded-box w-52 absolute rtl top-[170%] right-[0] md:w-80 !bg-[#241a1c] z-10 grid gap-x-2 p-[14px] box-border justify-items-end justify-end grid-cols-2 grid-y-5"
             >
               <a href="#">ایرانی</a>
               <a href="#">وسترن</a>
@@ -118,7 +119,7 @@
             </div>
           </div>
           <div
-            class="group flex flex-row text-white align-bottom relative dropdown dropdown-hover "
+            class="group flex flex-row h-[h-[inherit]] text-white align-bottom relative dropdown dropdown-hover"
           >
             <a class="flex flex-row-reverse group-hover:text-amber-400" href="#"
               >سریال<span
@@ -141,7 +142,7 @@
               ></span>
             </a>
             <div
-              class="dropDown dropdown dropdown-content shadow  rounded-box w-52 absolute rtl top-[170%] right-0 md:w-80 bg-[#241a1c] z-10 grid gap-x-2 p-[14px] box-border justify-items-end  justify-end grid-cols-2 grid-y-5 "
+              class="dropDown dropdown-content shadow rounded-box w-52 absolute rtl top-[97%] right-0 md:w-80 bg-[#241a1c] z-[10] grid gap-x-2 p-[14px] box-border justify-items-end justify-end grid-cols-2 grid-y-5 menu"
             >
               <a href="#">ایرانی</a>
               <a href="#">وسترن</a>
@@ -167,9 +168,11 @@
           <div class="irani hover:text-amber-400"><a href="#">ایرانی</a></div>
           <div class="foreign hover:text-amber-400"><a href="#">خارجی</a></div>
           <div
-            class="group flex flex-row text-white align-bottom dropdown-hover relative"
+            class="group flex flex-row text-white align-bottom dropdown dropdown-hover relative"
           >
-            <a class="flex flex-row-reverse group-hover:text-amber-400 text-nowrap" href="#"
+            <a
+              class="flex flex-row-reverse group-hover:text-amber-400 text-nowrap"
+              href="#"
               >مجموعه ها<span
                 class="w-2 text-white fill-white leading-[10px] inline-block mt-[9px] mr-3"
               >
@@ -189,7 +192,7 @@
                   /></svg
               ></span>
               <div
-                class="dropDown dropdown-content shadow  rounded-box w-52 absolute rtl top-[170%] right-0 md:w-80 !bg-[#241a1c] z-1 grid gap-x-2 p-[14px] box-border justify-items-end  justify-end grid-cols-2 grid-y-5 "
+                class="dropDown dropdown-content shadow rounded-box w-52 absolute rtl top-[97%] right-0 md:w-80 bg-[#241a1c] z-[10] grid gap-x-2 p-[14px] box-border justify-items-end justify-end grid-cols-2 grid-y-5 menu"
               >
                 <a href="#">ایرانی</a>
                 <a href="#">وسترن</a>
@@ -214,7 +217,7 @@
             >
           </div>
           <div
-            class="kids flex flex-row-reverse text-white align-bottom relative  dropdown-hover "
+            class="kids h-[100%] flex flex-row-reverse text-white align-bottom relative dropdown dropdown-hover"
           >
             <a
               class="group flex flex-row-reverse gap-2 hover:text-amber-400"
@@ -269,7 +272,7 @@
               ></span>
             </a>
             <div
-              class=" dropdown-content shadow  rounded-box w-52 absolute rtl top-[170%] right-0 md:w-80 !bg-[#241a1c] z-1 grid gap-x-2 p-[14px] box-border justify-items-end  justify-end grid-cols-2 grid-y-5"
+              class="dropdown-content shadow rounded-box w-52 absolute rtl top-[170%] right-0 md:w-80 bg-[#241a1c] z-[10] grid gap-x-2 p-[14px] box-border justify-items-end justify-end grid-cols-2 grid-y-5 menu"
             >
               <a href="#">ایرانی</a>
               <a href="#">وسترن</a>
@@ -293,7 +296,9 @@
             </div>
           </div>
           <div class="search align-top">
-            <a href="#" class="flex flex-row gap-2 group-[search]-hover:text-amber-400"
+            <a
+              href="#"
+              class="flex flex-row gap-2 group-[search]-hover:text-amber-400"
               >جستجو
               <span class=""
                 ><svg
@@ -326,101 +331,159 @@
           <i class="fa fa-bars"></i>
         </a> -->
         <button
-          class="signIn lg:w-[10%] h-[80%] lg:mt-1  md:w-[40%] p-0  lg:text-center float-end lg:ml-10 bg-[#3a4142]/70 rounded-md align-middle mt-2 hover:bg-[#48504e] transition-all duration-700 md:ml-2 md:text-wrap z-2 text-ellipsis  text-center m-auto  "
+          class="signIn lg:w-[10%] h-[80%] lg:mt-1 md:w-[40%] p-0 lg:text-center float-end lg:ml-10 bg-[#3a4142]/70 rounded-md align-middle mt-2 hover:bg-[#48504e] transition-all duration-700 md:ml-2 md:text-wrap z-2 text-ellipsis text-center m-auto"
         >
           ورود و تماشای رایگان
         </button>
       </nav>
 
-       <!-- nav End -->
+      <!-- nav End -->
+
       <!-- Swiper -->
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./image/nature-1024x682.jpeg" alt=""></div>
-          <div class="swiper-slide"><img src="./image/study-hard-sticky-note-illustration_53876-8282.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="./image/web-developer-illustration-concept-a-flat-illustration-isolated-on-white-background-vector.jpg" alt=""></div>
-          
+          <div class="swiper-slide"></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
+
       <!-- swiper End -->
       <!-- filter -->
       <div
-        class="filter w-[100%]  flex lg:flex-1 gap-2 flex-wrap lg:flex-row-reverse lg:p-[10px] p-[15px] justify-center flex-col  flex-grow bg-zinc-800 h-auto "
+        class="filter w-[100%] flex lg:flex-1 gap-2 flex-wrap lg:flex-row-reverse p-[15px] justify-center flex-col flex-grow bg-[#323232] h-auto lg:h-[69px]"
       >
         <select
-          class="select select-md select-bordered border-gray-600 border-[0.5px]  lg:w-[15%] w-full !rtl bg-transparent text-white "
+          class="select select-sm !lg:h-[32px] select-bordered border-gray-600 border-[0.5px] h-[40px] lg:w-[15%] w-full !rtl bg-transparent text-white"
         >
-          <option disabled selected class=" text-right">فیلم و سریال</option>
+          <option disabled selected class="text-right">فیلم و سریال</option>
           <option>Han Solo</option>
           <option>Greedo</option>
         </select>
-        <select class="select select-md select-bordered border-gray-600 border-[0.5px]  lg:w-[15%] w-full !rtl bg-transparent text-white">
-          <option disabled selected class=" text-right">ژانر</option>
+        <select
+          class="select select-sm select-bordered border-gray-600 border-[0.5px] h-[40px] lg:w-[15%] w-full !rtl bg-transparent text-white"
+        >
+          <option disabled selected class="text-right">ژانر</option>
           <option>Han Solo</option>
           <option>Greedo</option>
         </select>
-        <select class="select select-md select-bordered border-gray-600 border-[0.5px]  lg:w-[15%] w-full !rtl bg-transparent text-white ">
-          <option disabled selected class=" text-right">سال تولید</option>
+        <select
+          class="select select-sm select-bordered border-gray-600 border-[0.5px] h-[40px] lg:w-[15%] w-full !rtl bg-transparent text-white"
+        >
+          <option disabled selected class="text-right">سال تولید</option>
           <option>Han Solo</option>
           <option>Greedo</option>
         </select>
-        <select class="select select-md select-bordered border-gray-600 border-[0.5px]  lg:w-[15%] w-full !rtl bg-transparent text-white">
-          <option disabled selected class=" text-right">فیلم و سریال</option>
+        <select
+          class="select select-sm select-bordered border-gray-600 border-[0.5px] h-[40px] lg:w-[15%] w-full !rtl bg-transparent text-white"
+        >
+          <option disabled selected class="text-right">فیلم و سریال</option>
           <option>Han Solo</option>
           <option>Greedo</option>
         </select>
-        <select class="select select-bordered lg:w-[13%]  border-gray-300 border-[0.5px]   w-full !rtl bg-transparent text-white">
-          <option disabled selected class=" text-right">فیلم و سریال</option>
+        <select
+          class="select select-sm select-bordered lg:w-[13%] border-gray-600 border-[0.5px] h-[40px] w-full !rtl bg-transparent text-white"
+        >
+          <option disabled selected class="text-right">فیلم و سریال</option>
           <option>Han Solo</option>
           <option>Greedo</option>
         </select>
-        <div class="flex flex-col lg:w-[10%] w-full rounded-md p-1 justify-items-center border-opacity-40 border-gray-600 border-[1.5px]   !rtl bg-transparent text-white ">
-          <div class="form-control ">
-            <label class="cursor-pointer label">
-              <span class="label-text text-white">HD</span> 
-              <input type="checkbox" class="toggle toggle-warning"  />
+        <div
+          class="flex flex-col lg:w-[10%] w-full rounded-md p-1 justify-items-center border-opacity-40 border-gray-600 border-[0.5px] h-[40px] !rtl bg-transparent text-white"
+        >
+          <div class="form-control">
+            <label
+              class="cursor-pointer label pt-[3.5px] leading-[20px] text-align-middle"
+            >
+              <span class="label-text text-white">HD</span>
+              <input type="checkbox" class="toggle toggle-warning" />
             </label>
           </div>
         </div>
-        <button class="btn btn-md lg:w-[13%] btn-warning    ">اعمال فیلتر</button>
-      <!-- filter End -->
+        <button class="btn btn-sm lg:w-[13%] btn-warning h-[40px]">
+          اعمال فیلتر
+        </button>
+        <!-- filter End -->
+      </div>
+
+      <!-- movies options -->
+      <!-- catagory -->
+      
+      <div class="catagory">
+        <div class="title">
+          <h1>ویژه رایگان</h1>
+          <span>مشاهده همه <span></span></span>
+        </div>
+        <div class="movies">
+          <!-- <div class="picture">
+          <div class="overlay"></div>
+          <img src="./image/img-1.jpeg" alt="">
+        </div> -->
+        </div>
+      </div>
+      <!-- catagory End -->
+
+      <!-- recently -->
+      
+      <div class="recently">
+        <div class="title">
+          <h1>تازه ها</h1>
+          <span> <img src="./image/left-chevron-black-16111.svg " alt="" class=" w-[15px] h-[15px] inline-block"> <span>مشاهده همه</span></span>
+        </div>
+        <div class="option">
+          <!-- <div class="picture">
+            <div class="overlay"></div>
+            <img src="./image/mov_6121_429-b.webp" alt="" />
+          </div> -->
+        
+        </div>
+      </div>
+<!-- recently End -->
+
+      <!-- cool -->
+      
+      <div class="cool">
+        <div class="title">
+          <h1>خفن ها</h1>
+          <span> <img src="./image/left-chevron-black-16111.svg " alt="" class=" w-[15px] h-[15px] inline-block"> <span>مشاهده همه</span></span>
+        </div>
+        <div class="cool-movie">
+          <!-- <div class="picture">
+            <div class="overlay"></div>
+            <img src="./image/mov_6121_429-b.webp" alt="" />
+          </div> -->
+        </div>
+      </div>
+      <!-- cool End -->
+
+      <!-- hot -->
+      <div class="hot">
+        <div class="title">
+          <h1>تازه ها</h1>
+          <span> <img src="./image/left-chevron-black-16111.svg " alt="" class=" w-[15px] h-[15px] inline-block"> <span>مشاهده همه</span></span>
+        </div>
+
+        <div class="hot-movie">
+          
+        </div>
+      </div>
+      <!-- hot End -->
+      
     </div>
 
-    <div class="catagory"></div>
-
-    <!-- <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div> -->
-    <!-- <script type="module" src="/public/main.js"></script> -->
-    <!-- <script src="./public/js/menu.js"></script> -->
-    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-         <!-- autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        }, -->
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+
+
+      <!-- var swiper = new Swiper(".mySwiper", {
+           pagination: {
+             el: ".swiper-pagination",
+           },
+           autoplay: {
+             delay: 2500,
+             disableOnInteraction: false,
+           },
+        }); -->
     </script>
-  
+    <script type="module" src="./public/main.js"></script>
   </body>
 </html>

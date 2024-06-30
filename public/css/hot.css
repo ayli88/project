@@ -1,0 +1,104 @@
+.hot {
+    width: 100%;
+    height: 20vh;
+    padding: 0 10px;
+    box-sizing: border-box;
+    /* background-color: red; */
+    
+  
+    .title{
+      /* width: inherit;
+      height: 10%;
+      vertical-align: top;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin-bottom: 50px; */
+    
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        margin-bottom: 20px;
+        h1 {
+          color: white;
+          font-weight: bold;
+        }
+  
+        span {
+          color: orange;
+          font-weight: 300;
+        }
+      }
+    }
+    .hot-movie{
+      width: 100%;
+      height: 40%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      /* background-color: black; */
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      gap: 20px;
+      .picture {
+        /* width: 0%;
+        height: 30%; */
+        object-fit: cover;
+        overflow: hidden;
+        position: relative;
+      
+        }
+  
+        img {
+          width: 160px;
+          height: 25vh;
+          object-fit: cover;
+          border-radius: 5px;
+          z-index: 1;
+        }
+  
+        .overlay {
+          width: 100%;
+          border-radius: 5px;
+  
+          height: 100%;
+          z-index: 2;
+          background-color: #242424bb;
+          /* opacity: 0.6; */
+          height: 100%;
+          transform: translateY(-100%);
+          position: absolute;
+          transition: 900ms;
+  
+          h5,
+          p {
+            text-align: right;
+            /* width: 100%; */
+            height: 10px;
+            transform: translateY(-10px);
+            /* height: fit-content; */
+            margin-left: auto;
+            font-size: 14px;
+            /* line-height: 2px; */
+            /* text-wrap: wrap; */
+            margin-top: 70%;
+            color: white;
+          }
+          p{
+            margin-top: 10px;
+          }
+  
+          /* top: 100%; */
+        }
+        .picture:hover .overlay {
+          top: 0%;
+          /* transform: translateY(0%); */
+          cursor: pointer;
+          transition: 900ms;
+          z-index: 10   ;
+        }
+      }
+    
+  
+  

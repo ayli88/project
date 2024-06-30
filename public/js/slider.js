@@ -1,7 +1,8 @@
 const slider = async () => {
   try {
-    let slide = document.querySelector(".swiper-slide");
-    slide.classList.add("swiper-slide");
+    // let slide = document.querySelector(".swiper-slide");
+
+    // slide.classList.add("swiper-slide");
     let data = await fetch("http://localhost:3000/slider-desktop");
     let res = await data.json();
     let slider = res.map((elem) => {
@@ -9,7 +10,7 @@ const slider = async () => {
     });
     document
       .querySelector(".swiper-wrapper")
-      .insertAdjacentElement("beforeend", slider.join(""));
+      .insertAdjacentHTML("beforeend", slider.join(""));
   } catch (error) {
     console.log(error.message);
   }
